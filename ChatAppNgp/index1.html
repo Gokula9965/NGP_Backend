@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar1">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <div class="content"> <!-- Wrap remaining content in a div -->
+                <div class="theme1">
+                    <img src="assets/theme.png" alt="theme">
+                </div>
+                <div class="logout">
+                    <img src="assets/logout.png" alt="logout">
+                </div>
+            </div>
+        </aside>
+        
+        <aside class="sidebar">
+            <div class="recent">
+                <h2>Recent</h2>
+                <p>Chat from your friends <span role="img" aria-label="emoji"><img src="assets/emoji.png" alt="Jpny"></span></p>
+                <div class="friends">
+                    <div class="friend">
+                        <img src="assets/avatar1.jpeg" alt="Jpny">
+                        <span>Josephin Water</span>
+                    </div>
+                    <div class="friend">
+                        <img src="assets/avatar2.jpeg" alt="John Deo">
+                        <span>Josephin Water</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-options">
+                <h2>Chat</h2>
+                <p>Start New Conversation <span role="img1" aria-label="search" style="margin-left: 10px;"><img src="assets/search.png" alt="search1" style="width: 60px; vertical-align: middle;"></span></p>
+                <div class="actions">
+                    <button class="chat-btn active">Chat</button>
+                    <button class="chat-btn">Call</button>
+                    <button class="chat-btn">Contact</button>
+                </div>
+            </div>
+            <div class="recent-chat">
+                <div class="chat-item">
+                    <img src="assets/avatar2.jpeg" alt="Josephin Water" class="avatar">
+                    <div class="chat-details">
+                        <h3>Josephin Water</h3>
+                        <p>Hi, I am Josephin. How are you...</p>
+                    </div>
+                    <div class="chat-status">
+                        <span class="date">22/10/23</span>
+                        <span class="status">Seen</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-main">
+            <div class="chat-header">
+                <div class="chat-user">
+                    <img src="assets/avatar1.jpeg" alt="Josephin Water">
+                    <div class="user-info">
+                        <h3>Josephin Water</h3>
+                        <span class="status">Active</span>
+                    </div>
+                </div>
+                <div class="chat-options">
+                    <button><img src="assets/call.png" alt="Call"></button>
+                    <button><img src="assets/video.png" alt="Video"></button>
+                    <button><img src="assets/menu.png" alt="menu"></button>
+                    <button><img src="assets/more.png" alt="More"></button>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Hi I am Josephin, can you help me to find best chat app?</p>
+                    <span class="time">01:35 AM</span>
+                </div>
+                <div class="message received">
+                    <p>It should be from elite author</p>
+                    <span class="time">01:35 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Hi I am Alan,</p>
+                    <p>your personal assistant to help you</p>
+                    <span class="time">01:40 AM</span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <img src="Assets/upload.png" alt="upload">
+                <img src="Assets/emoji-fill.png" alt="emoji-fill">
+                <img src="Assets/plus-fill1.png" alt="plus-fill">
+                <input type="text" placeholder="Write your message...">
+                <img src="Assets/record.png" alt="record">
+                <img src="Assets/send.png" alt="Send">
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>

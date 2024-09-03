@@ -1,0 +1,277 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #e3e8ef;
+    padding: 20px;
+}
+
+.logo img {
+    width: 40px;
+    margin-bottom: 30px;
+}
+
+.recent h2 {
+    font-size: 20px;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+}
+
+.recent p {
+    color: #878787;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.friends .friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friends .friend img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.friends .friend span {
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+.chat-options {
+    margin-top: 20px;
+}
+
+.chat-options h2 {
+    font-size: 20px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+.chat-options p {
+    color: #878787;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.chat-options .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-btn {
+    background-color: #e9eff6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+.chat-btn.active {
+    background-color: #2e77d0;
+    color: #fff;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e3e8ef;
+}
+
+.chat-header .chat-user {
+    display: flex;
+    align-items: center;
+}
+
+.chat-header .chat-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.chat-header .chat-user .user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+
+.chat-header .chat-user .user-info .status {
+    color: #2e77d0;
+    font-size: 14px;
+}
+
+.chat-header .chat-options button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    position: relative;
+}
+
+.message.received {
+    background-color: #e9eff6;
+    align-self: flex-start;
+}
+
+.message.sent {
+    background-color: #2e77d0;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.message .time {
+    font-size: 12px;
+    color: #080808;
+    position: absolute;
+    bottom: 5px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #f0f4f8;
+}
+
+.recent-chat {
+    background-color: #f5f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-details {
+    flex-grow: 1;
+}
+
+.chat-details h3 {
+    font-size: 16px;
+    color: #2d2d2d;
+    margin: 0;
+}
+
+.chat-details p {
+    color: #878787;
+    font-size: 14px;
+}
+
+.chat-status {
+    text-align: right;
+}
+
+.chat-status .date {
+    color: #878787;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.chat-status .status {
+    color: #2e77d0;
+    font-size: 14px;
+}
+.sidebar1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content to top and bottom */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    margin-bottom: 20px; /* Adds space below the logo */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    gap: 10px; /* Adds space between the theme and logout icons */
+}
+
+.theme1, .logout {
+    margin-top: auto; /* Ensures the theme and logout icons are pushed to the bottom */
+    align-self: flex-start; /* Aligns them to the left (optional, based on your design) */
+}
+
+.theme1 img, .logout img {
+    width: 50px; /* Adjust the size of the images */
+    height: 50px;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
